@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hexo</title>
+  <title>Mysql第三次课 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="/*  Mysql第三次课*/CREATE DATABASE schooldb;USE Schooldb; #教师表CREATE TABLE teacher(    tid INT PRIMARY KEY AUTO_INCREMENT,    tnam VARCHAR(20) NOT NULL,    hiredate DATE,    sex VARCHAR(5))INSERT INTO tea">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mysql第三次课">
+<meta property="og:url" content="http://yoursite.com/2019/10/23/Mysql第三次课/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="/*  Mysql第三次课*/CREATE DATABASE schooldb;USE Schooldb; #教师表CREATE TABLE teacher(    tid INT PRIMARY KEY AUTO_INCREMENT,    tnam VARCHAR(20) NOT NULL,    hiredate DATE,    sex VARCHAR(5))INSERT INTO tea">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-23T06:44:34.784Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Mysql第三次课">
+<meta name="twitter:description" content="/*  Mysql第三次课*/CREATE DATABASE schooldb;USE Schooldb; #教师表CREATE TABLE teacher(    tid INT PRIMARY KEY AUTO_INCREMENT,    tnam VARCHAR(20) NOT NULL,    hiredate DATE,    sex VARCHAR(5))INSERT INTO tea">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,157 +154,174 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Mysql第三次课" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/23/Mysql第四次课/" class="archive-article-date">
-  	<time datetime="2019-10-23T06:43:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/23/Mysql第四次课/">Mysql第四次课</a>
+    <h1 class="article-title" itemprop="name">
+      Mysql第三次课
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/23/Mysql第三次课/" class="archive-article-date">
+        
+        <a href="/2019/10/23/Mysql第三次课/" class="archive-article-date">
   	<time datetime="2019-10-23T06:43:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/23/Mysql第三次课/">Mysql第三次课</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>/*<br>  Mysql第三次课<br>*/<br>CREATE DATABASE schooldb;<br>USE Schooldb;</p>
+<p>#教师表<br>CREATE TABLE teacher(<br>    tid INT PRIMARY KEY AUTO_INCREMENT,<br>    tnam VARCHAR(20) NOT NULL,<br>    hiredate DATE,<br>    sex VARCHAR(5)<br>)<br>INSERT INTO teacher(tnam,hiredate,sex)<br>VALUES(‘张三’,’2017-09-01’,’男’),(‘李四’,’2012-07-08’,’男’),(‘王五’,’2019-04-11’,’男’);</p>
+<p>#班级信息表<br>CREATE TABLE ClassInfo(<br>    cid INT PRIMARY KEY AUTO_INCREMENT,<br>    cnam VARCHAR(20) NOT NULL,<br>    grid INT, #年级编号<br>    beginyear VARCHAR(20)<br>)<br>INSERT INTO ClassInfo(cnam,grid,beginyear)<br>VALUES (‘软信1班’,1,’2018’),(‘移动1班’,2,’2018’),(‘软信1班’,3,’2019’),(‘移动1班’,4,’2019’);</p>
+<p>#学生信息表<br>CREATE TABLE StudentInfo(<br>    sid INT PRIMARY KEY AUTO_INCREMENT,<br>    snam VARCHAR(20) NOT NULL,<br>    sex VARCHAR(5),<br>    age INT,<br>    birthday DATE,<br>    cid INT,<br>    beginyear VARCHAR(20),<br>    stel VARCHAR(15),<br>    address VARCHAR(100),<br>    email VARCHAR(50)<br>)<br>INSERT INTO StudentInfo(snam,sex,age,birthday,cid,beginyear,stel,address,email) VALUES<br>(‘崔一’,’男’,18,’2001-07-05’,1,’2018’,’18867890987’,’河南省许昌市’,‘159078923@qq.com’),<br>(‘丁二’,’男’,19,’2000-08-05’,2,’2018’,’18967890987’,’河南省许昌市’,‘156078923@qq.com’),<br>(‘丁三’,’男’,20,’1999-09-05’,3,’2018’,’18877890987’,’河南省郑州市’,‘157078923@qq.com’),<br>(‘周三’,’女’,17,’2002-06-05’,4,’2019’,’18177890987’,’河南省洛阳市’,‘157278923@qq.com’);</p>
+<p>#课程表<br>CREATE TABLE course(<br>    coid INT PRIMARY KEY AUTO_INCREMENT,<br>    cnam VARCHAR(50) NOT NULL,#课程名<br>    tid INT    #讲授老师编号<br>)<br>INSERT INTO course(cnam,tid)<br>VALUES(‘计算机基础’,1),(‘前端基础’,2),(‘java基础’,3),(‘js基础’,3);</p>
+<p>#成绩表<br>CREATE TABLE score(<br>    scid INT PRIMARY KEY AUTO_INCREMENT,<br>    sid INT ,#学生学号+<br>    coid INT, #课程编号<br>    score INT,<br>    remark VARCHAR(100) #备注<br>)<br>INSERT INTO score(sid,coid,score,remark)<br>VALUES(1,1,90,’无’),(1,2,75,’无’),(1,3,59,’无’),(1,4,76,’无’),<br>(2,1,93,’无’),(2,2,77,’无’),(2,3,66,’无’),(2,4,78,’无’),<br>(3,1,87,’无’),(3,2,55,’无’),(3,3,76,’无’),(4,1,88,’无’),<br>(4,2,66,’无’),(4,3,90,’无’),(4,4,76,’无’);</p>
+<p>#年级表m k<br>CREATE TABLE grade(<br>    gid INT PRIMARY KEY AUTO_INCREMENT,<br>    gnam VARCHAR(50), #年级名<br>    major VARCHAR(100) #专业<br>)<br>INSERT INTO grade(gnam,major)<br>VALUES(‘18级’,’软信’),(‘19级’,’软信’),(‘18级’,’移动’),(‘19级’,’移动’);</p>
+<p>#order by排序<br>#把StudentInfo表按年纪从小到大排序<br>select * FROM StudentInfo ORDER BY age asc;<br>#把StudentInfo表按年纪从大到小排序<br>SELECT * FROM StudentInfo ORDER BY age desc;</p>
+<p>#group by 分组<br>#把某张表按照某个字段进行分组<br>#查询出每个学生的平均成绩，结果要显示的字段为：学生学号 平均成绩<br>select sid,avg(score)    ‘平均成绩’<br>from score group by sid;<br>#group by … having..筛选出来符合条件的组<br>#查询出全部及格学生的平均成绩<br>select sid,avg(score) ‘avg’ from score group by sid having min(score)&gt;60;<br>#查询出考试门数不够四门的学生学号<br>select sid from score group by sid having count(*)&lt;4;<br>#查询出”计算机基础”的成绩<br>select coid,score from score where coid=(select coid from course where cnam=’计算机基础’);<br>#查询出每门课的平均成绩</p>
+<p>#查询出’周三’学生的平均成绩<br>select avg(score) ‘平均成绩’ from score where sid=(select sid from studentinfo where snam=’周三’);<br>#连接<br>SELECT * FROM StudentInfo s,score c WHERE s.sid=c.sid;<br>#查询出每个人的平均成绩，要的字段为，姓名，平均成绩<br>SELECT snam, AVG(score) FROM StudentInfo s,score c WHERE s.sid=c.sid;<br>GROUP BY s.sid;<br>#内连接<br>SELECT * FROM StudentInfo s INNER JOIN score c ON s.sid=c.sid;<br>SELECT snam,AVG(score) FROM StudentInfo s INNER JOIN score c ON s.sid=c.sid GROUP BY s.sid;<br>#左连接<br>SELECT * FROM StudentInfo s INNER JOIN score c ON<br>s.sid=c.sid;<br>#查询出有不及格成绩需学生信息，缺考算不及格<br>SELECT * FROM StudentInfo WHERE sid<br>IN(<br>    SELECT sid FROM score GROUP BY sid HAVING MIN(score)&lt;60<br>    UNION SELECT sid FROM score GROUP BY sid HAVING  COUNT(<em>) &lt; (SELECT COUNT(</em>) FROM  course));</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/23/Mysql第三次课/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/23/Mysql第二次课/" class="archive-article-date">
-  	<time datetime="2019-10-23T06:37:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2019/10/23/Mysql第四次课/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Mysql第四次课
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/10/23/Mysql第二次课/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mysql第二次课</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/23/Mysql第二次课/">Mysql第二次课</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/23/Mysql第一次课/" class="archive-article-date">
-  	<time datetime="2019-10-22T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/23/Mysql第一次课/">Mysqli第一次课</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/12/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-12T03:50:04.803Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/12/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -323,8 +344,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
