@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -33,7 +32,7 @@
   
 
 </head>
-</html>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -55,22 +54,22 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)" target="_blank" rel="noopener">所有文章</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)" target="_blank" rel="noopener">友链</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)" target="_blank" rel="noopener">关于我</a>
     			
             
 		</nav>
@@ -135,7 +134,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -152,267 +151,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Mysql第四次课" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/23/Mysql第四次课/">Mysql第四次课</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/23/Mysql第四次课/" class="archive-article-date">
-  	<time datetime="2019-10-23T06:43:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>/*<br>Mysql第四次课<br>    truncate清空表<br>    truncate table 表名<br>    is  null<br>    is not null<br>模糊查询<br>    like<br>    % 代表一个或多个字符<br>    _ 代表一个字符<br>    exists存在<br>    exists里边括住的是一个<br>    查询语句,如果查询语句有结果，外部查询就正常执行，如果没结果，外部查询不执行<br>    not exists不存在<br>*/<br>SELECT * FROM course WHERE cnam IS NOT NULL<br>#模糊查询<br>#查询出姓名中包含“三”的学生的信息<br>SELECT * FROM StudentInfo WHERE snam LIKE ‘%三%’;<br>#查询出姓周的同学信息<br>SELECT * FROM StudentInfo WHERE snam LIKE ‘周%’<br>#如果有安阳市的学生，就把本班所有学生的信息查询出来<br>SELECT * FROM StudentInfo WHERE EXISTS(<br>    SELECT * FROM StudentInfo WHERE address LIKE ‘%许昌%’<br>)</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/23/Mysql第四次课/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Mysql第三次课" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/23/Mysql第三次课/">Mysql第三次课</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/23/Mysql第三次课/" class="archive-article-date">
-  	<time datetime="2019-10-23T06:43:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>/*<br>  Mysql第三次课<br>*/<br>CREATE DATABASE schooldb;<br>USE Schooldb;</p>
-<p>#教师表<br>CREATE TABLE teacher(<br>    tid INT PRIMARY KEY AUTO_INCREMENT,<br>    tnam VARCHAR(20) NOT NULL,<br>    hiredate DATE,<br>    sex VARCHAR(5)<br>)<br>INSERT INTO teacher(tnam,hiredate,sex)<br>VALUES(‘张三’,’2017-09-01’,’男’),(‘李四’,’2012-07-08’,’男’),(‘王五’,’2019-04-11’,’男’);</p>
-<p>#班级信息表<br>CREATE TABLE ClassInfo(<br>    cid INT PRIMARY KEY AUTO_INCREMENT,<br>    cnam VARCHAR(20) NOT NULL,<br>    grid INT, #年级编号<br>    beginyear VARCHAR(20)<br>)<br>INSERT INTO ClassInfo(cnam,grid,beginyear)<br>VALUES (‘软信1班’,1,’2018’),(‘移动1班’,2,’2018’),(‘软信1班’,3,’2019’),(‘移动1班’,4,’2019’);</p>
-<p>#学生信息表<br>CREATE TABLE StudentInfo(<br>    sid INT PRIMARY KEY AUTO_INCREMENT,<br>    snam VARCHAR(20) NOT NULL,<br>    sex VARCHAR(5),<br>    age INT,<br>    birthday DATE,<br>    cid INT,<br>    beginyear VARCHAR(20),<br>    stel VARCHAR(15),<br>    address VARCHAR(100),<br>    email VARCHAR(50)<br>)<br>INSERT INTO StudentInfo(snam,sex,age,birthday,cid,beginyear,stel,address,email) VALUES<br>(‘崔一’,’男’,18,’2001-07-05’,1,’2018’,’18867890987’,’河南省许昌市’,‘159078923@qq.com’),<br>(‘丁二’,’男’,19,’2000-08-05’,2,’2018’,’18967890987’,’河南省许昌市’,‘156078923@qq.com’),<br>(‘丁三’,’男’,20,’1999-09-05’,3,’2018’,’18877890987’,’河南省郑州市’,‘157078923@qq.com’),<br>(‘周三’,’女’,17,’2002-06-05’,4,’2019’,’18177890987’,’河南省洛阳市’,‘157278923@qq.com’);</p>
-<p>#课程表<br>CREATE TABLE course(<br>    coid INT PRIMARY KEY AUTO_INCREMENT,<br>    cnam VARCHAR(50) NOT NULL,#课程名<br>    tid INT    #讲授老师编号<br>)<br>INSERT INTO course(cnam,tid)<br>VALUES(‘计算机基础’,1),(‘前端基础’,2),(‘java基础’,3),(‘js基础’,3);</p>
-<p>#成绩表<br>CREATE TABLE score(<br>    scid INT PRIMARY KEY AUTO_INCREMENT,<br>    sid INT ,#学生学号+<br>    coid INT, #课程编号<br>    score INT,<br>    remark VARCHAR(100) #备注<br>)<br>INSERT INTO score(sid,coid,score,remark)<br>VALUES(1,1,90,’无’),(1,2,75,’无’),(1,3,59,’无’),(1,4,76,’无’),<br>(2,1,93,’无’),(2,2,77,’无’),(2,3,66,’无’),(2,4,78,’无’),<br>(3,1,87,’无’),(3,2,55,’无’),(3,3,76,’无’),(4,1,88,’无’),<br>(4,2,66,’无’),(4,3,90,’无’),(4,4,76,’无’);</p>
-<p>#年级表m k<br>CREATE TABLE grade(<br>    gid INT PRIMARY KEY AUTO_INCREMENT,<br>    gnam VARCHAR(50), #年级名<br>    major VARCHAR(100) #专业<br>)<br>INSERT INTO grade(gnam,major)<br>VALUES(‘18级’,’软信’),(‘19级’,’软信’),(‘18级’,’移动’),(‘19级’,’移动’);</p>
-<p>#order by排序<br>#把StudentInfo表按年纪从小到大排序<br>select * FROM StudentInfo ORDER BY age asc;<br>#把StudentInfo表按年纪从大到小排序<br>SELECT * FROM StudentInfo ORDER BY age desc;</p>
-<p>#group by 分组<br>#把某张表按照某个字段进行分组<br>#查询出每个学生的平均成绩，结果要显示的字段为：学生学号 平均成绩<br>select sid,avg(score)    ‘平均成绩’<br>from score group by sid;<br>#group by … having..筛选出来符合条件的组<br>#查询出全部及格学生的平均成绩<br>select sid,avg(score) ‘avg’ from score group by sid having min(score)&gt;60;<br>#查询出考试门数不够四门的学生学号<br>select sid from score group by sid having count(*)&lt;4;<br>#查询出”计算机基础”的成绩<br>select coid,score from score where coid=(select coid from course where cnam=’计算机基础’);<br>#查询出每门课的平均成绩</p>
-<p>#查询出’周三’学生的平均成绩<br>select avg(score) ‘平均成绩’ from score where sid=(select sid from studentinfo where snam=’周三’);<br>#连接<br>SELECT * FROM StudentInfo s,score c WHERE s.sid=c.sid;<br>#查询出每个人的平均成绩，要的字段为，姓名，平均成绩<br>SELECT snam, AVG(score) FROM StudentInfo s,score c WHERE s.sid=c.sid;<br>GROUP BY s.sid;<br>#内连接<br>SELECT * FROM StudentInfo s INNER JOIN score c ON s.sid=c.sid;<br>SELECT snam,AVG(score) FROM StudentInfo s INNER JOIN score c ON s.sid=c.sid GROUP BY s.sid;<br>#左连接<br>SELECT * FROM StudentInfo s INNER JOIN score c ON<br>s.sid=c.sid;<br>#查询出有不及格成绩需学生信息，缺考算不及格<br>SELECT * FROM StudentInfo WHERE sid<br>IN(<br>    SELECT sid FROM score GROUP BY sid HAVING MIN(score)&lt;60<br>    UNION SELECT sid FROM score GROUP BY sid HAVING  COUNT(<em>) &lt; (SELECT COUNT(</em>) FROM  course));</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/23/Mysql第三次课/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Mysql第二次课" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/23/Mysql第二次课/">Mysql第二次课</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/23/Mysql第二次课/" class="archive-article-date">
-  	<time datetime="2019-10-23T06:37:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>/*<br>Mysql第二次课<br>数据库的设计规范<br>    数据库的设计三大范式<br>        第一范式：<br>            表中的字段都是不可分割的最小的单元数据<br>        第二范式：<br>            每张表只能描述一件事，每张表都要有主键，<br>        第三范式：<br>            非主键字段，要依赖于主键字段，换句话说，非主键字段与主键字段直接相关。<br>在设计表时，尽可能依照三大范式，但有的时候为了性能，会牺牲范式。<br>    Mysql运算符：<br>        算术运算符：+ - * /<br>        逻辑运算符: and or !<br>        比较运算符: &gt; &lt; &gt;= &lt;= &lt;&gt;(不等于) !=<br>*/<br>CREATE DATABASE mysafa;<br>USE mysafa;<br>CREATE TABLE goods(<br>   gnam VARCHAR(100),<br>   gprice FLOAT<br>)<br>SELECT * FROM goods;<br>INSERT INTO goods(gnam,gprice) VALUES(‘吹风机’,3);<br>INSERT INTO goods(gnam,gprice) VALUES(‘外套’,200);<br>INSERT INTO goods(gnam,gprice) VALUES(‘书包’,50);<br>INSERT INTO goods(gnam,gprice) VALUES(‘布偶’,20);<br>#查询出商品价格大于10的商品<br>SELECT * FROM goods WHERE gprice&gt;10;<br>#查询出商品价格不等于10的商品信息<br>SELECT * FROM goods WHERE gprice&lt;&gt;10;<br>#查询商品价格大于10并且小于50的商品信息<br>SELECT * FROM goods WHERE gprice&gt;10 AND gprice&lt;50;</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/23/Mysql第二次课/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Mysql第一次课" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/23/Mysql第一次课/">Mysql第一次课</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/23/Mysql第一次课/" class="archive-article-date">
-  	<time datetime="2019-10-22T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>/*<br>Mysql数据库第一次课<br>    数据库的分类<br>        关系型数据库<br>            sqlserver mysql orcale<br>        非关系型数据库nosql<br>            redis<br>        关系型数据库<br>一、什么是数据库<br>    用来存储数据的仓库，数据库由一张一张的表组成，真正存储数据的地方为表<br>二、什么是表<br>    表由行和列组成<br>    行在数据库里称为记录<br>    列称为字段或属性<br>    例如：学生表，表里应该有，学生的学号，姓名，身份证号，年纪。那么这些就称为表的字段。<br>    关系型数据库，是由一张一张有关系的表的组成的<br>三、安装Mysql<br>    先安装Mysql服务器<br>        数据库是创建的在服务器上的<br>    再安装Mysql客户端<br>        用于连接上mysql服务器，进而对mysql服务器进行操作，比较常用的客户端有navicat sqlyog<br>四、sql语句的学习<br>    1、创建语句<br>        1.1、创建数据库<br>            create database 库名;<br>        1.2、创建表<br>            create table 表名(<br>            字段名1 数据类型 约束,<br>            字段名2 数据类型 约束,<br>            字段名3 数据类型<br>            )<br>        1.3、最常用的数据类型<br>            int<br>            char：字符串类型，固定<br>            长度：varchar 字符串类型,可变<br>            长度：float<br>    2、插入语句<br>        insert into 表名(字段1,字段2)<br>        values(数据1,数据2)<br>    3、查询语句<br>        select 字段1,字段2,字段3<br>        from 表名<br>    4、删除语句<br>        删除库：dorp database 库名;<br>        删除表：drop table 表名;<br>        删除表中所有的数据：delete from 表名;<br>        删除表中指定的数据：delete from 表名 where …<br>    5、修改语句<br>        update 表名 set … where …<br>五、约束<br>    1.主键结束(PRIMARY KEY)<br>        主键：一行的唯一标识，表中的其它数据依赖于主键<br>        不允许重复，非空<br>    2.非空约束(NOT NULL)<br>    3.唯一约束(UNIQUE)<br>        此列不允许重复<br>    4.默认值(DEFAULT)<br>    5.check约束(CHECK)<br>    6.外键约束(FOREIGN KEY)<br>        外键：此表中的一个字段，引用另外一张表中字段数据，并且被引用的字段，<br>            是另外一张表主键。那么此表中的字段就称为本张表的外键。<br>*/<br>#创建库<br>CREATE DATABASE onlinemalll;<br>#使用指定的库<br>USE onlinemalll;<br>#创建表<br>CREATE TABLE goods(<br>   gid INT PRIMARY KEY,#把gid设置表的主键<br>   gnam VARCHAR(100),<br>   gprice FLOAT<br>)<br>#插入数据<br>INSERT INTO goods(gid,gnam,gprice)<br> VALUES(1,’小熊雨伞’,11.6);<br>INSERT INTO goods(gid,gnam,gprice)<br> VALUES(2,’小熊饼干’,3.5);<br>INSERT INTO goods(gid,gnam,gprice)<br> VALUES(3,’小熊书包’,25);<br>#查询goods表<br>SELECT * FROM goods;<br>#删除gid等于3的数据<br>DELETE FROM goods WHERE gid=3;<br>#把小熊雨伞的价格改为15元<br>UPDATE goods SET gprice=15<br>    WHERE gnam=’小熊雨伞’;</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/23/Mysql第一次课/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -420,13 +158,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/12/hello-world/">Hello World</a>
+      <a class="article-title" href="/2019/11/04/hello-world/">Hello World</a>
     </h1>
   
 
         
-        <a href="/2019/10/12/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-12T03:50:04.803Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-12</time>
+        <a href="/2019/11/04/hello-world/" class="archive-article-date">
+  	<time datetime="2019-11-04T08:39:37.068Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-04</time>
 </a>
         
       </header>
@@ -445,7 +183,7 @@
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
 
@@ -458,7 +196,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/12/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/11/04/hello-world/">展开全文 >></a>
         </p>
       
 
@@ -472,7 +210,7 @@
     <div class="mod-side-operation">
         
         <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
                 <i class="icon-font icon-back"></i>
             </a>
             <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
@@ -552,15 +290,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" target="_blank" rel="noopener" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" target="_blank" rel="noopener" q-class="active:friends">友链</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" target="_blank" rel="noopener" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
